@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
+          scaffoldBackgroundColor: Colors.grey[300],
         ),
-        home: LoginPage());
+        home: SafeArea(child: LoginPage()));
   }
 }
